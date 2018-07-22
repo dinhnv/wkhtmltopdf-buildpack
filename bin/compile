@@ -10,7 +10,8 @@ BIN_PATH="$BUILD_DIR/bin"
 TMP_PATH="$BUILD_DIR/tmp"
 mkdir -p $CACHE_DIR $BIN_PATH $TMP_PATH
 
-WKHTMLTOPDF_URL="http://download.gna.org/wkhtmltopdf/0.12/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz"
+WKHTMLTOPDF_VERSION="0.12.3"
+WKHTMLTOPDF_URL="https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/${WKHTMLTOPDF_VERSION}/wkhtmltox-${WKHTMLTOPDF_VERSION}_linux-generic-amd64.tar.xz"
 WKHTMLTOPDF_PKG="$CACHE_DIR/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz"
 WKHTMLTOPDF_PATH="$TMP_PATH/wkhtmltopdf"
 SOURCE_DIR="$WKHTMLTOPDF_PATH/wkhtmltox"
